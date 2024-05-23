@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char string[100];
+    int count = 0;
+    printf("Digite uma string: ");
+    scanf("%s", string);
+    for (int i = 0; i < strlen(string); i++) {
+        if (string[i] == '1') {
+            count++;
+        }
+    }
+    printf("O número 1 aparece %d vezes na string.\n", count);
+    return 0;
+}
